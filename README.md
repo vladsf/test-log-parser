@@ -5,7 +5,9 @@ with web search interface.
 
 ```
 $ docker run --name test-postgres -e POSTGRES_PASSWORD=postgres -d postgres
+$ chmod 755 ./parser.pl 
 $ cat out |./parser.pl -c -d
+$ chmod 755 ./mojo.pl 
 $ ./mojo.pl daemon -l http://*:8080
 ```
 
